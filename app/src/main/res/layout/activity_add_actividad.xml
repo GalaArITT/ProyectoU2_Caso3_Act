@@ -119,8 +119,8 @@
             android:id="@+id/fini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Fecha inicio dd-mm-aa"
             android:inputType="date"
-            android:hint="Fecha inicio DD/MM/AA"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
@@ -157,7 +157,7 @@
             android:id="@+id/ffin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Fecha de finalizacion DD/MM/AA"
+            android:hint="Fecha de finalizacion dd-mm-aa"
             android:inputType="date"
             android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>

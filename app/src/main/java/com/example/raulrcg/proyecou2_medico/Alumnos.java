@@ -82,7 +82,7 @@ public class Alumnos extends AppCompatActivity {
                 in.putExtra("idp",ids[i]);
                 in.putExtra("op",1);//0 insert 1 update
                 startActivity(in);
-                Toast.makeText(getApplication(),""+i,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplication(),""+i,Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
