@@ -71,6 +71,14 @@ public class Actividad extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton fabhome = (FloatingActionButton) findViewById(R.id.fabhome);
+        fabhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Actividad.this, Alumnos.class));
+            }
+        });
+
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

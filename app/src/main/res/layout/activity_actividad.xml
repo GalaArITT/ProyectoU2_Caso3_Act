@@ -20,7 +20,8 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_actividad" />
+    <include layout="@layout/content_actividad"
+        android:id="@+id/include8" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -30,5 +31,16 @@
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/colorPrimary"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabhome"
+        android:layout_width="55dp"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom|left"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/include8"
+        app:layout_anchorGravity="top|right"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
 </android.support.design.widget.CoordinatorLayout>
