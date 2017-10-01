@@ -12,10 +12,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Vector;
 
-/**
- * Created by raulrcg on 26/09/17.
- */
-
 public class DBAdapter {
 
     //Tabla Alumno
@@ -102,7 +98,7 @@ public class DBAdapter {
         return db.rawQuery(sql,null);
     }
     //consulta que cuenta
-    public Cursor getCountPacientes(int rowid){
+    public Cursor getCountPacientesAz(int rowid){
         String sql="select sum(credito) from"+ DATABASE_TABLE_M+ "where" +ROWID_P_M +"=" + rowid;
         return db.rawQuery(sql,null);
     }

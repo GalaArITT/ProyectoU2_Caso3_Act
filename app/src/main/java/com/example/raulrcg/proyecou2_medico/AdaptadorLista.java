@@ -10,10 +10,6 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-/**
- * Created by raulrcg on 26/09/17.
- */
-
 public class AdaptadorLista extends BaseAdapter{
 
     Context context;

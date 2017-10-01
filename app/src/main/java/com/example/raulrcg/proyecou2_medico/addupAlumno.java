@@ -37,7 +37,7 @@ public class addupAlumno extends AppCompatActivity {
 
         db=new DBAdapter(getApplicationContext());
         if(op==1){
-            titulo.setText("Actualizar paciente #"+id);
+            titulo.setText("Actualizar Alumno");
 
             db.open();
             Cursor paciente=db.getAllPaciente(id);
