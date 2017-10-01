@@ -1,0 +1,7 @@
+echo "# ProyecoU2_Medico" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/RaulCarvajal/ProyecoU2_Medico.git
+git push -u origin master
+infinitum1595
