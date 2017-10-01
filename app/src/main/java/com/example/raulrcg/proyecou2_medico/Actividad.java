@@ -17,7 +17,7 @@ public class Actividad extends AppCompatActivity {
 
     TextView nom,dir,mail,fec;
     ListView lista;
-    AdaptadorLista al;
+    AdaptadorListaAlumnos al;
     DBAdapter db;
     CheckBox vig;
 
@@ -101,7 +101,7 @@ public class Actividad extends AppCompatActivity {
                 result.moveToNext();
             }
             result.close();
-            al=new AdaptadorLista(getApplicationContext(),nombres,fechas);
+            al=new AdaptadorListaAlumnos(getApplicationContext(),nombres,fechas);
             lista.setAdapter(al);
         }
     }
