@@ -98,11 +98,11 @@ public class DBAdapter {
         return db.rawQuery(sql,null);
     }
     //consulta que cuenta
-    public Cursor getCountPacientesAz(int rowid){
-        String sql="select sum(credito) from"+ DATABASE_TABLE_M+ "where" +ROWID_P_M +"=" + rowid;
+    public Cursor getCountPacientesAz(){
+        String sql="select distinct a.name, a.celular, a.email, a.career, (select sum(credito)) as credito"
+                + " from alumno a, actividad ac where a._id= ac._idAlumno "+"order by a.name;";
         return db.rawQuery(sql,null);
     }
-
 
     //-- Recuperar paciente
     public Cursor getAllPaciente(int rowId) throws SQLException {

@@ -38,6 +38,7 @@ public class Alumnos extends AppCompatActivity {
         ids=new int[db.lengthPacientes()];
         int i=0;
         Cursor result=db.getAllPacientesAZ();
+        //Cursor result = db.getCountPacientesAz();
         result.moveToFirst();
         while (!result.isAfterLast()) {
             int id = result.getInt(0);
